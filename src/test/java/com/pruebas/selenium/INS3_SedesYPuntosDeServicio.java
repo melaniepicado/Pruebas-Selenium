@@ -15,8 +15,9 @@ public class INS3_SedesYPuntosDeServicio {
 
     private WebDriver driver;
     By registerLinkLocator = By.linkText("Sedes y Puntos de Servicio");
-    By registerLinkLocator1 = By.xpath("//*[@id=\"section-content\"]/div[2]/div/div[2]");
-    By registerLinkLocator3 = By.xpath("//*[@id=\"section-content\"]/div[2]/div/div[1]/a/div/div/p[3]/span");
+    By registerLinkLocator1 = By.xpath("//*[@id=\"content-prod-items\"]/div[2]");
+    By registerLinkLocator3 = By.xpath("//*[@id=\"content-prod-items\"]/div[1]");
+    By registerLinkLocator4 = By.xpath("//*[@id=\"content-prod-items\"]/div[3]");
 	
 	@Before
 	public void setUp() {
@@ -34,17 +35,24 @@ public class INS3_SedesYPuntosDeServicio {
 		Thread.sleep(2000);
 		driver.findElement(registerLinkLocator3).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("filter")).sendKeys("Heredia");
+		driver.findElement(By.id("acordeon-0")).click();
+		//driver.findElement(By.id("filter")).sendKeys("Heredia");
 		Thread.sleep(2000);
-		driver.findElement(By.id("acordeon-8")).click();
-		Thread.sleep(2000);
+		//driver.findElement(By.id("acordeon-8")).click();
+		//Thread.sleep(2000);
 		driver.get("https://www.grupoins.com/sedes-del-ins-y-puntos-de-servicio/");
 		Thread.sleep(2000);
 		driver.findElement(registerLinkLocator1).click();
 		Thread.sleep(2000);
-		driver.findElement(By.id("filter")).sendKeys("Coronado");
+		driver.findElement(By.id("acordeon-0")).click();
+		//driver.findElement(By.id("filter")).sendKeys("Coronado");
 		Thread.sleep(2000);
-		driver.findElement(By.id("acordeon-2")).click();
+		//driver.findElement(By.id("acordeon-2")).click();
+		driver.get("https://www.grupoins.com/sedes-del-ins-y-puntos-de-servicio/");
+		Thread.sleep(2000);
+		driver.findElement(registerLinkLocator4).click();
+		Thread.sleep(2000);
+		driver.findElement(By.id("acordeon-0")).click();
 		Thread.sleep(2000);
 		driver.get("https://www.grupoins.com/sedes-del-ins-y-puntos-de-servicio/");
 		driver.get("https://www.grupoins.com/");

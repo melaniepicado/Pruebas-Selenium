@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class INS1_Marchamo {
 	
-	//Prueba en el apartado de Marchamo
+	//Prueba en el apartado de MarchamoZ
 
 	private WebDriver driver;
 	By registerLinkLocator = By.linkText("Servicios");
@@ -43,6 +43,8 @@ public class INS1_Marchamo {
 		driver.findElement(By.id("ctl00_ContentPlaceHolder2_txtPlaca")).sendKeys("299845");
 		Thread.sleep(2000);
 		driver.findElement(By.name("ctl00$ContentPlaceHolder2$cmdUISubmit")).click();
+		Thread.sleep(5000);
+		driver.get("https://www.grupoins.com/");
 	}
 	
 	@After

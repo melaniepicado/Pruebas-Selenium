@@ -13,9 +13,8 @@ public class INS4_ReserveSuCita {
 	
 	//Prueba en el apartado de Reserve su cita
 
-private WebDriver driver;
-
-	By registerLinkLocator = By.linkText("Servicios");
+    private WebDriver driver;
+    By registerLinkLocator = By.linkText("Servicios");
 	By registerLinkLocator1 = By.linkText("Cliente");
 	By registerLinkLocator2 = By.linkText("Reserve su cita");
 	
@@ -46,7 +45,7 @@ private WebDriver driver;
 		driver.findElement(By.id("Phone")).sendKeys("86242591");
 		Thread.sleep(2000);
 		driver.findElement(By.id("Email")).sendKeys("melaniepicado30@gmail.com");
-		Thread.sleep(8000);
+		Thread.sleep(15000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div/div/form/div[7]/div[4]/button")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div/div/form/div[7]/div/button")).click();
@@ -61,9 +60,9 @@ private WebDriver driver;
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[1]/div/div/div/div/div[2]")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[1]/div/div/div/div/div/div[2]/div/div/div/div[2]/button[32]")).click();
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[1]/div/div/div/div/div/div[2]/div/div/div/div[2]/button[26]")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[1]/div/div/div/div/div/div[7]")).click();
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[1]/div/div/div/div/div/div[4]")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div[2]/form/div[2]/div/button[2]")).click();
 		Thread.sleep(2000);
@@ -73,6 +72,11 @@ private WebDriver driver;
 		Thread.sleep(2000);
 		driver.findElement(By.cssSelector("option:nth-child(3)")).click();
 		Thread.sleep(2000);
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/main/div/div/div[2]/div/div[2]/div/div[3]/div/div/div[2]/div[3]/div/button[1]")).click();
+		Thread.sleep(2000);
+		driver.findElement(By.xpath("/html/body/div[2]/div/div[1]/div/div/div[2]/button[2]")).click();
+		Thread.sleep(2000);
+		driver.get("https://www.grupoins.com/");
 	}
 	
 	@After

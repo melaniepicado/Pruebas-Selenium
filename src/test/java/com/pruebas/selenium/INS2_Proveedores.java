@@ -36,7 +36,7 @@ public class INS2_Proveedores {
 		Thread.sleep(2000);
 		driver.findElement(registerLinkLocator2).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("//*[@id=\"content-prod-items\"]/div[1]/a/div/div[1]/img")).click(); 
+		driver.findElement(By.xpath("//*[@id=\"content-prod-items\"]/div[1]/a/div/div[1]/img")).click();
 		Thread.sleep(2000);
 		driver.findElement(By.name("ctl00$cphPrincipal$ddlProvincia")).click();
 		Thread.sleep(2000);
